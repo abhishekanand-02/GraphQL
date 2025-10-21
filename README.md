@@ -72,12 +72,35 @@ uvicorn server:app --reload --host 0.0.0.0 --port 8000
 
 ## 🔑 API Configuration
 
-The application uses pre-configured API keys for external services:
+The application requires API keys for external services. 
 
-- **OpenWeather API**: `73062d948a64deda103f2812d4ddc7fd`
-- **Alpha Vantage API**: `66LA8M2XG3BAMHRS`
+### Setup Environment Variables:
 
-> **Note**: These keys are included for demonstration purposes. For production use, consider using environment variables or a secure key management system.
+1. **Copy the example file:**
+   ```bash
+   cp .env.example .env
+   ```
+
+2. **Edit the `.env` file with your actual API keys:**
+   ```bash
+   # .env file
+   OPENWEATHER_API_KEY=your_actual_openweather_api_key
+   ALPHA_VANTAGE_API_KEY=your_actual_alpha_vantage_api_key
+   ```
+
+### Getting API Keys:
+
+1. **OpenWeather API**: 
+   - Visit: https://openweathermap.org/api
+   - Sign up for a free account
+   - Get your API key from the dashboard
+
+2. **Alpha Vantage API**:
+   - Visit: https://www.alphavantage.co/support/#api-key
+   - Sign up for a free account
+   - Get your API key from the dashboard
+
+> **⚠️ Security Note**: Never commit real API keys to version control. Always use environment variables or secure key management systems.
 
 ## 🔍 GraphQL Queries
 

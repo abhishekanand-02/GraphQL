@@ -6,8 +6,10 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - OPENWEATHER_API_KEY=73062d948a64deda103f2812d4ddc7fd
-      - ALPHA_VANTAGE_API_KEY=66LA8M2XG3BAMHRS
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+      - ALPHA_VANTAGE_API_KEY=${ALPHA_VANTAGE_API_KEY}
+    env_file:
+      - .env
     volumes:
       - .:/app
     restart: unless-stopped
