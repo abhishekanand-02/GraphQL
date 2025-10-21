@@ -43,8 +43,9 @@ docker-compose up --build
 ```
 
 **Access the application:**
-- 🌐 **Dashboard**: http://localhost:8000
-- 🔧 **GraphQL Playground**: http://localhost:8000/graphql
+- 🌐 **Dashboard**: http://localhost:8000 (Main UI with real-time data)
+- 🔧 **GraphQL Playground**: http://localhost:8000/graphql (Interactive query interface)
+- ❤️ **Health Check**: http://localhost:8000/health (Server status)
 
 ### Option 2: Local Development
 
@@ -65,8 +66,9 @@ uvicorn server:app --reload --host 0.0.0.0 --port 8000
 ```
 
 **Access the application:**
-- 🌐 **Dashboard**: http://localhost:8000
-- 🔧 **GraphQL Playground**: http://localhost:8000/graphql
+- 🌐 **Dashboard**: http://localhost:8000 (Main UI with real-time data)
+- 🔧 **GraphQL Playground**: http://localhost:8000/graphql (Interactive query interface)
+- ❤️ **Health Check**: http://localhost:8000/health (Server status)
 
 ## 🔑 API Configuration
 
