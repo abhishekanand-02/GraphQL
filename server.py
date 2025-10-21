@@ -3,6 +3,7 @@ from datetime import datetime
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from strawberry.fastapi import GraphQLRouter
 from dotenv import load_dotenv
 from schema import Query
