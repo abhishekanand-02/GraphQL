@@ -1,0 +1,5 @@
+strawberry-graphql[fastapi]
+uvicorn
+requests
+feedparser
+python-dotenv
